@@ -5,7 +5,7 @@ import threading
 import logging
 from datetime import datetime
 
-url = "https://velo-xso2.onrender.com/"
+url = "https://velo-xso2.onrender.com/api/socket"
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
