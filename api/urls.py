@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from .keep_alive import keep_alive
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('example.urls')),
+    path('keep-alive/', keep_alive, name='keep_alive'),
 ]
