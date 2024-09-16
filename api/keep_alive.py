@@ -23,6 +23,7 @@ def keep_alive_task():
 keep_alive_thread = threading.Thread(target=keep_alive_task, daemon=True)
 keep_alive_thread.start()
 
+
 def keep_alive(request):
     try:
         response = requests.get(url)
