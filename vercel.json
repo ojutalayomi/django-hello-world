@@ -4,5 +4,11 @@
       "src": "/(.*)",
       "dest": "api/wsgi.py"
     }
+  ],
+  "crons": [
+    {
+      "path": "/keep-alive/",
+      "schedule": "*/4 * * * *"
+    }
   ]
 }
